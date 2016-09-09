@@ -2,7 +2,7 @@
 {
     #check the machine architecture
     MACHINE_TYPE=`uname -m`
-    if [ ${MACHINE_TYPE} = 'x86_64' ]; then
+    if [ ${MACHINE_TYPE} = x86_64 ]; then
        WUM_URL="http://product-dist.wso2.com/downloads/wum/1.0-beta/wum-1.0-beta-linux-x64.tar.gz"
     else
        WUM_URL="http://product-dist.wso2.com/downloads/wum/1.0-beta/wum-1.0-beta-linux-i586.tar.gz"
