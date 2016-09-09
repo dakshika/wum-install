@@ -22,9 +22,9 @@
     cd /usr/local/
 
     if [ -z "$(which wget)" ]; then
-        curl -s $WUM_URL | tar xz
+        curl -s $WUM_URL --progress-bar | tar xz
     else
-        wget -qO- $WUM_URL | tar xz
+        wget -qO- $WUM_URL --show-progress | tar xz
     fi
 
 SCRIPT
