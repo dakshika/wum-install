@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 {
     #check the machine architecture
     MACHINE_TYPE=`uname -m`
