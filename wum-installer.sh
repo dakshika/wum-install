@@ -8,6 +8,9 @@
        WUM_URL="http://product-dist.wso2.com/downloads/wum/1.0-beta/wum-1.0-beta-linux-i586.tar.gz"
     fi
 
+    #remove previously logged sessions
+    sudo -k
+
     echo "This installation script requires superuser access."
     echo "You will be prompted to enter sudo password."
 
@@ -29,7 +32,7 @@ SCRIPT
      #add simple PATH reminder
      case "$PATH" in
           */usr/local/wum/bin*)
-            echo "WSO2 update manager installed successfully"
+            echo "WSO2 update manager installed"
             ;;
           *)
             echo "Add the WUM to your PATH using:"
