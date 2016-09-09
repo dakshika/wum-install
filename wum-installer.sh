@@ -21,8 +21,6 @@
     rm -fr /usr/local/wum
     cd /usr/local/
 
-    echo "Downloding..."
-
     if [ -z "$(which wget)" ]; then
         curl -s $WUM_URL --progress-bar | tar xz
     else
