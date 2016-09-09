@@ -16,6 +16,7 @@
 
     #install tarball into
     rm -fr /usr/local/wum
+    cd /usr/local/
 
     if [ -z "$(which wget)" ]; then
         curl -s $WUM_URL | tar xz
