@@ -32,7 +32,7 @@ SCRIPT
      #add simple PATH reminder
      case "$PATH" in
           */usr/local/wum/bin*)
-            echo "WSO2 update manager installed"
+            echo "WSO2 update manager installed successfully"
             ;;
           *)
             echo "Add the WUM to your PATH using:"
