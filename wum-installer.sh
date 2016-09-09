@@ -36,7 +36,7 @@ SCRIPT
             ;;
           *)
             echo "Add the WUM to your PATH using:"
-            echo "$ export PATH=$PATH:/usr/local/wum/bin"
+            echo "$ export PATH=\$PATH:/usr/local/wum/bin"
             ;;
         esac
 }
